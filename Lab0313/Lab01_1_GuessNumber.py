@@ -7,3 +7,5 @@ while score != guess:
 
 print("맞았습니다.")
 print("게임이 종료되었습니다.")
+
+

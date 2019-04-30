@@ -10,3 +10,5 @@ while guess != number:
         print("맞았습니다.")
     else:
         print("틀렸습니다.")
+
+
