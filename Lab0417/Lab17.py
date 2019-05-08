@@ -11,8 +11,13 @@ def CrossString(s1, s2):
     finish = min(s1Len, s2Len)
     for i in range(0, finish):
         print("%s%s" % (s1[i], s2[i]), end="")
-    for i in range(finish, s1Len):
-        print("%s" % s1[i], end="")
+    if s1Len > s2Len:
+        for i in range(finish, s1Len):
+            print("%s" % s1[i], end="")
+    else:
+        for i in range(finish, s2Len):
+            print("%s" % s2[i], end="")
+
 
 s1 = input("첫 번째 문자열 입력: ")
 s2 = input("두 번째 문자열 입력: ")
